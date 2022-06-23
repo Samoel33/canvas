@@ -52,7 +52,7 @@ h3 {
 
 .information {
     height: 73vh;
-    background-image: url("/club.jpg");
+    background-image: url("./club.jpg");
     max-width: 100%;
     display: block;
     background-repeat: no-repeat;
