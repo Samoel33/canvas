@@ -1,0 +1,100 @@
+:root {
+    --body-color: rgb(80, 5, 80);
+    --music-festival: rgba(4, 156, 62, 0.5);
+    --heading-size: 2.5rem;
+    --body-text-size: 1.5rem;
+    --button-text-size: 1.8rem;
+    --hints-text-size: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-color);
+    overflow: hidden;
+    font-size: 62.5%;
+}
+
+canvas {
+    /* position: absolute; */
+    width: 100%;
+    height: 65%;
+    background-color: var(--body-color);
+    border-bottom: 2px solid white;
+}
+
+h2 {
+    width: 100%;
+    font-size: 2rem;
+    background-color: var(--music-festival);
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    display: none;
+}
+
+h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0.5rem 0 0 1rem;
+}
+
+.show {
+    display: inline-block;
+}
+
+.information {
+    height: 73vh;
+    background-image: url("/club.jpg");
+    max-width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+
+.groupText {
+    position: absolute;
+    bottom: 0.5rem;
+    height: 5rem;
+    animation: upDown 3s ease-in-out infinite;
+}
+
+.span {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+span,
+.span {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: var(--music-festival);
+}
+
+@keyframes upDown {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2rem);
+        animation-timing-function: ease-in;
+    }
+}
